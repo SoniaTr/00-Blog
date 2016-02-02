@@ -3,14 +3,9 @@ body{
     margin: 0 auto;
     width: 100%;
 }
-
 section{
     width: 60%;
     float: left;
-    
-}
-p{
-    background: #c0c0c0;
 }
 
 aside{
@@ -20,5 +15,47 @@ aside{
 
 footer{
     clear: both;
-   text-align: center;
+}
+
+@media (max-width: 1201px) {
+    
+}
+
+@media (min-width: 481px) and (max-width: 1050px)  {
+    aside{
+        display:none;
+    }
+    body{
+        text-align: left;
+        font-size: 16px;
+        background-color: #ffffe0;
+    }
+    section{
+        background-color: #f0f8ff;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+    }
+    footer{
+        background-color: cornsilk;
+    }    
+}
+@media only screen and (max-width: 480px){
+    aside{
+        display:none;
+    }
+    body{
+        text-align: left;
+        font-size: 12px;
+        background-color: #ffe4b5;
+    }
+    section{
+        background-color: #f0ffff;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100%;
+    }
+    footer{
+        background-color: blanchedalmond;
+    }
 }
